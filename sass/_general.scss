@@ -1,0 +1,145 @@
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: mediumslateblue;
+    padding: 0;
+    &__items {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    &__title {
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+.main {
+    min-height: 150px;
+    width: 100%;
+    &__items {
+        min-height: 150px;
+        width: 100%;
+        padding: 25px 0;
+        .search__block {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            form {
+                select {
+                    height: 45px;
+                    width: 120px;
+                    border-radius: 10px;
+                    outline: none;
+                    border: 2px solid mediumslateblue;
+                    color: mediumslateblue;
+                    font-weight: 500;
+                }
+                input {
+                    height: 45px;
+                    width: 450px;
+                    padding-left: 10px;
+                    border-radius: 10px;
+                    border: 2px solid mediumslateblue;
+                    outline: none;
+                }
+                button {
+                    height: 45px;
+                    width: 100px;
+                    border: 2px solid mediumslateblue;
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: mediumslateblue;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    &:hover {
+                        transition: 0.3s all;
+                        background-color: mediumslateblue;
+                        color: #fff;
+                    }
+                    &:active {
+                        background-color: #fff;
+                        border: 2px solid mediumslateblue;
+                        color: mediumslateblue;
+                    }
+                }
+            }
+        }
+        .main__block {
+            min-height: auto;
+            width: 100%;
+            // padding: 15px 0;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .card {
+                min-height: 350px;
+                width: 350px;
+                margin-top: 20px;
+                position: relative;
+                border-radius: 10px;
+                border: none;
+                box-shadow: 0 0 10px 1px  gray;
+                .card__main {
+                    position: absolute;
+                    min-height: auto;
+                    width: 100%;
+                    background: rgba(0,0,0, .7);
+                    bottom: 50px;
+                    .card__title {
+                        color: #fff;
+                    }
+                    .card__descr {
+                        color: #fff;
+                        margin-top: 10px;
+                    }
+                }
+                .card__more {
+                    height: 50px;
+                    width: 100%;
+                    padding: 10px;
+                    position: absolute;
+                    background-color: #fff;
+                    bottom: 0;
+                    border-top: 1px solid mediumslateblue;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    border-radius: 0 0 10px 10px;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 35px;
+                        width: 100px;
+                        border-radius: 10px;
+                        border: 1px solid mediumslateblue;
+                        text-decoration: none;
+                        color: mediumslateblue;
+                        background-color: #fff;
+                        font-size: 18px;
+                        font-weight: 500;
+                        &:hover {
+                            transition: 0.2s all;
+                            background-color: mediumslateblue;
+                            color: #fff;
+                        }
+                        &:active {
+                            background-color: #fff;
+                            border: 1px solid mediumslateblue;
+                            color: mediumslateblue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
